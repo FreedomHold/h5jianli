@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>个人简历</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <style>
+
+    </style>
+</head>
+<script>
+    let w = document.documentElement.clientWidth || document.body.clientWidth;
+    let a = w / 750 * 100;
+    document.documentElement.style.fontSize = a + "px";
+</script>
+<script src="./node_modules/vue/dist/vue.js"></script>
+
+<body>
+    <div class="music rotate">
+        <i class="iconfont">&#xe61d</i>
+        <audio src="https://res1.eqh5.com/o_1csltb09h10nt1snpke4ghg289.mp3"></audio>
+    </div>
+
+    <section id="app" class="loginBox" style="display: none;">
+        <div class="Picture">
+            <img class="topPicture animated bounceIn" src="./images/Fj0uxLMQ_pp1btNDAWhoJd4XMtIG.webp" alt="">
+            <img class="bottomPicture animated bounceIn" src="./images/Fj0uxLMQ_pp1btNDAWhoJd4XMtIG.webp" alt="">
+            <img class="textTopPicture animated slideInRight" src="./images/FihONrNJcOO0N65-4UZR11dJPigs.webp" alt="">
+            <img class="textBottomPicture animated slideInRight" src="./images/FmabZmyGv8pl3DF2ngOfxie10aqt.webp" alt="">
+        </div>
+        <div>
+            <img class="gerenjianli animated heartBeat" src="./images/gerenjianli.webp" alt="">
+            <img class="shu animated rollIn" src="./images/shu.webp" alt="">
+            <div class="name_text">
+                <h4 class="animated slideInRight">李海洋</h4>
+                <p class="animated slideInRight">求职意向：web前端开发</p>
+            </div>
+        </div>
+        <div class="photo animated bounceIn">
+            <div class="photo_outer">
+            </div>
+            <img class="img1" src="./images/FlQs2IHNcEAuCP225y83MQRHyqGd.webp" alt="">
+            <img class="headPortrait" src="./images/FoN9fnxTQzTiyNblkfLq1WlfQ0k3.webp" alt="">
+        </div>
+    </section>
+    <section id="information" class="information" style="display: none;">
+        <div class="Picture">
+            <img class="topPicture animated bounceIn" src="./images/Fj0uxLMQ_pp1btNDAWhoJd4XMtIG.webp" alt="">
+            <img class="bottomPicture animated bounceIn" src="./images/Fj0uxLMQ_pp1btNDAWhoJd4XMtIG.webp" alt="">
+        </div>
+        <div class="photo animated bounceIn">
+            <div class="photo_outer">
+            </div>
+            <!-- <img class="img1" src="./images/FlQs2IHNcEAuCP225y83MQRHyqGd.webp" alt=""> -->
+            <img class="headPortrait" src="./images/FoN9fnxTQzTiyNblkfLq1WlfQ0k3.webp" alt="">
+        </div>
+        <div class="headTitle">
+            <div class="headTitle_text">
+                <h4 class="animated slideInLeft">基本信息</h4>
+                <p class="animated slideInLeft">BASIC INFORMATION</p>
+                <img src="../images/FpmCHy2sGMIQpOEaEeqeQcrtrQuc.webp" alt="">
+                <img class="across" src="./images/FjgffMfd8HKtNxVkKEtRw6tw-Cx6.webp" alt="">
+            </div>
+            <!-- <img src="../images/FpmCHy2sGMIQpOEaEeqeQcrtrQuc.webp" alt=""> -->
+        </div>
+        <div class="informationTop animated bounceInDown">
+            <span>
+                姓名：王小明
+            </span>
+            <div>
+                <span>
+                    性别：男
+                </span>
+            </div>
+            <div>
+                <span>
+                    年龄：23岁
+                </span>
+            </div>
+            <div>
+                <span>
+                    学历：大专
+                </span>
+            </div>
+        </div>
+        <div class="informationCenter">
+            <img class="img01 animated bounceInRight" src="./images/Fl_Pl1Nv1rXXjb_l6KRVTz1-RmMP.webp" alt="">
+            <img class="img11 animated bounceInRight" src="./images/FqKSRFA9HTBSMktgQ7bg6SIqZqs-.webp" alt="">
+            <img class="img12 animated bounceInRight" src="./images/FqKSRFA9HTBSMktgQ7bg6SIqZqs-.webp" alt="">
+            <img class="img13 animated bounceInRight" src="./images/FqKSRFA9HTBSMktgQ7bg6SIqZqs-.webp" alt="">
+            <img class="img21 animated bounceInRight" src="./images/FjgffMfd8HKtNxVkKEtRw6tw-Cx6.webp" alt="">
+            <img class="img22 animated bounceInRight" src="./images/FjgffMfd8HKtNxVkKEtRw6tw-Cx6.webp" alt="">
+            <img class="img23 animated bounceInRight" src="./images/FjgffMfd8HKtNxVkKEtRw6tw-Cx6.webp" alt="">
+            <img class="img31 animated bounceInLeft" src="./images/FqDRcEFL8uEmRSE-D_0U57Ax72Xp.webp" alt="">
+            <img class="img32 animated bounceInLeft" src="./images/FqDRcEFL8uEmRSE-D_0U57Ax72Xp.webp" alt="">
+            <img class="img33 animated bounceInLeft" src="./images/FqDRcEFL8uEmRSE-D_0U57Ax72Xp.webp" alt="">
+
+            <div class="animated bounceInDown">
+                <span>
+                    求职贵公司web开发
+                </span>
+            </div>
+            <div class="animated bounceInDown">
+                <span>
+                    期望待遇：面议
+                </span>
+            </div>
+            <div class="animated bounceInDown">
+                <span>
+                    期望地区：北京
+                </span>
+            </div>
+        </div>
+        <div class="informationBottom animated bounceInUp">
+            <span>
+                熟悉语言和框架
+            </span>
+            <div>
+                <span>
+                    html、css、vue、<br />jQuery、javaScript、<br />React
+                </span>
+            </div>
+        </div>
+    </section>
+    <section id="work" class="work" style="display: none;">
+        <div class="Picture">
+            <img class="topPicture animated bounceIn" src="./images/Fj0uxLMQ_pp1btNDAWhoJd4XMtIG.webp" alt="">
+            <img class="bottomPicture animated bounceIn" src="./images/Fj0uxLMQ_pp1btNDAWhoJd4XMtIG.webp" alt="">
+        </div>
+        <div class="headTitle">
+            <div class="headTitle_text">
+                <h4 class="animated slideInLeft">工作经历</h4>
+                <p class="animated slideInLeft">WORK EXPERIENCE</p>
+                <img class="across" src="./images/FjgffMfd8HKtNxVkKEtRw6tw-Cx6.webp" alt="">
+            </div>
+        </div>
+        <div class="workContent">
+            <div class="work_left">
+                <div class="animated bounceInRight">
+                    2016
+                </div>
+                <div class="animated bounceInRight">
+                    2016
+                </div>
+                <div class="animated bounceInRight">
+                    2017
+                </div>
+                <div class="animated bounceInRight">
+                    2017
+                </div>
+                <div class="animated bounceInRight">
+                    2018
+                </div>
+                <div class="animated bounceInRight">
+                    2018
+                </div>
+            </div>
+            <img class="work_vertical" src="./images/Fl_Pl1Nv1rXXjb_l6KRVTz1-RmMP.webp" alt="">
+            <div class="work_right">
+                <div class="animated bounceInLeft">
+                    <h4>Java程序员</h4>
+                    <h4>河北交通职业技术学院</h4>
+                </div>
+                <div class="animated bounceInLeft">
+                    <p>主要负责web开发</p>
+                </div>
+                <div class="animated bounceInLeft">
+                    <h4>web开发</h4>
+                    <h4>河北交通职业技术学院</h4>
+                </div>
+                <div class="animated bounceInLeft">
+                    <p>
+                        主要负责网站的维护
+                        公司主要职业就是网站的开发主要做H5开发 web网页开发
+                        主要做的互联网的设计以及运行维护
+                    </p>
+                </div>
+                <div class="animated bounceInLeft">
+                    <h4>web前端开发</h4>
+                    <h4>北京珠峰世纪培训有限公司</h4>
+                </div>
+                <div class="animated bounceInLeft">
+                    <p>
+                        主要做自身技术的提升与发展
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="workExperience" class="workExperience" style="display: none;">
+        <div class="Picture">
+            <img class="topPicture animated bounceIn" src="./images/Fj0uxLMQ_pp1btNDAWhoJd4XMtIG.webp" alt="">
+            <img class="bottomPicture animated bounceIn" src="./images/Fj0uxLMQ_pp1btNDAWhoJd4XMtIG.webp" alt="">
+        </div>
+        <div class="headTitle">
+            <div class="headTitle_text">
+                <h4 class="animated slideInLeft">工作经验</h4>
+                <p class="animated slideInLeft">WORK EXPERIENCE</p>
+                <img class="across" src="./images/FjgffMfd8HKtNxVkKEtRw6tw-Cx6.webp" alt="">
+            </div>
+        </div>
+        <div class="workContent">
+            <div class="workTwo">
+                <a class="animated rotateInDownLeft" href="">项目一</a>
+                <br />
+                <img class="animated flipInX" src="./images/收款.png" alt="">
+            </div>
+            <div class="workthree">
+                <a class="animated rotateInDownRight" href="">项目二</a>
+                <br />
+                <img class="animated flipInX" src="./images/背景.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="contactMe" style="display: none;">
+        <div class="Picture">
+            <img class="topPicture animated bounceIn" src="./images/Fj0uxLMQ_pp1btNDAWhoJd4XMtIG.webp" alt="">
+            <img class="bottomPicture animated bounceIn" src="./images/Fj0uxLMQ_pp1btNDAWhoJd4XMtIG.webp" alt="">
+        </div>
+        <div class="headTitle">
+            <div class="headTitle_text">
+                <h4 class="animated slideInLeft">请联系我</h4>
+                <p class="animated slideInLeft">PLEASE CONTACT ME</p>
+                <img class="across" src="./images/FjgffMfd8HKtNxVkKEtRw6tw-Cx6.webp" alt="">
+            </div>
+        </div>
+        <div class="workContent">
+            <div class="workOne">
+                <a class="animated zoomInUp" href="">联系我</a>
+                <br />
+                <br />
+                <img class="animated rotateIn" src="./images/好友.png" alt="">
+            </div>
+            <p class="animated fadeInDown">
+                If your company needs web developers, please contact me
+            </p>
+        </div>
+    </section>
+
+
+    <div class="coverOne">
+        <ul class="clear">
+            <li style="opacity:0"></li>
+            <li style="opacity:0"></li>
+            <li style="opacity:0"></li>
+            <li style="opacity:0"></li>
+            <li style="opacity:0"></li>
+            <li style="opacity:0"></li>
+            <li style="opacity:0"></li>
+            <li style="opacity:0"></li>
+            <li style="opacity:0"></li>
+            <li style="opacity:0"></li>
+            <li style="opacity:0"></li>
+            <li style="opacity:0"></li>
+            <li style="opacity:0"></li>
+            <li style="opacity:0"></li>
+            <li style="opacity:0"></li>
+            <li style="opacity:0"></li>
+        </ul>
+    </div>
+</body>
+
+</html>
+<script src="./js/zepto.min.js"></script>
+<script src="./js/index.js"></script>

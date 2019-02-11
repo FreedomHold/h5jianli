@@ -1,0 +1,454 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: url("../images/bg2.gif") no-repeat center center;
+  background-size: cover;
+  color: #ffffff;
+  font-size: 0.3rem;
+}
+.clear::after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  font-size: 0;
+  clear: both;
+}
+.clear {
+  zoom: 1;
+}
+.music {
+  z-index: 20;
+  width: 0.5rem;
+  height: 0.5rem;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  transform-origin: center center;
+}
+.music i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.5rem;
+  color: white;
+}
+.coverOne {
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background: url(../images/bg1.webp) no-repeat center center;
+  background-size: cover;
+}
+.coverOne ul {
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+}
+.coverOne ul li {
+  z-index: 100;
+  float: left;
+  width: 0.46875rem;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.973);
+  box-shadow: 0px 5px 2px white;
+  opacity: 0;
+}
+.Picture .topPicture {
+  position: relative;
+  top: -1.5rem;
+  right: -2.5rem;
+  z-index: 0;
+}
+.Picture .bottomPicture {
+  position: relative;
+  top: 8.5rem;
+  right: 1.5rem;
+  z-index: 0;
+}
+.loginBox {
+  z-index: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("../images/bg1.webp") no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+}
+.loginBox .photo {
+  width: 4rem;
+  height: 4rem;
+  background: url("../images/Fkvr8UY1nRDy_T4Xbyhic4iC2oXY.webp") no-repeat center center;
+  background-size: cover;
+  position: absolute;
+  top: 3.5rem;
+  right: 1rem;
+}
+.loginBox .photo .photo_outer {
+  width: 3.6rem;
+  height: 3.6rem;
+  margin: 0.2rem;
+  background: url("../images/FldmJlor1d5v18cJCyFJ3WPKe1cI.webp") no-repeat center center;
+  background-size: cover;
+  animation: move 1s linear infinite;
+}
+.loginBox .photo .img1 {
+  position: absolute;
+  top: 0.6rem;
+  left: 0.4rem;
+}
+.loginBox .photo .headPortrait {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  top: 0.5rem;
+  left: 0.5rem;
+}
+.loginBox .gerenjianli {
+  position: absolute;
+  top: 0.3rem;
+  left: 0.2rem;
+}
+.loginBox .shu {
+  position: absolute;
+  top: 0.25rem;
+  left: 3.2rem;
+}
+.loginBox .name_text {
+  color: white;
+  z-index: 5;
+}
+.loginBox .name_text h4 {
+  position: absolute;
+  top: 0.3rem;
+  left: 3.5rem;
+  font-size: 0.35rem;
+}
+.loginBox .name_text p {
+  position: absolute;
+  top: 0.8rem;
+  left: 3.5rem;
+  animation-delay: 0.1s;
+  font-size: 0.25rem;
+}
+.loginBox .name_text .rotate {
+  animation: move 1s linear infinite;
+}
+.loginBox .Picture .textTopPicture {
+  position: relative;
+  top: 2.5rem;
+  right: -2.5rem;
+  z-index: 0;
+}
+.loginBox .Picture .textBottomPicture {
+  position: relative;
+  top: 2.5rem;
+  right: -1.5rem;
+  z-index: 0;
+}
+@keyframes move {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+}
+.headTitle .headTitle_text {
+  position: absolute;
+  top: 0.5rem;
+  left: 2.5rem;
+  text-align: right;
+}
+.headTitle .headTitle_text h4 {
+  animation-delay: 0.1s;
+  font-size: 0.4rem;
+}
+.headTitle .headTitle_text p {
+  animation-delay: 0.2s;
+  font-size: 0.3rem;
+}
+.headTitle .headTitle_text .across {
+  margin-top: -0.3rem;
+  width: 3.5rem;
+  height: 0.1rem;
+}
+.information {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("../images/bg1.webp") no-repeat center center;
+  background-size: cover;
+}
+.information .photo {
+  width: 3rem;
+  height: 3rem;
+  background: url("../images/FgM1e4jbWT57tfa8rRh3OeJtZdwm.webp") no-repeat center center;
+  background-size: cover;
+  position: absolute;
+  top: 1.5rem;
+  left: 0.5rem;
+}
+.information .photo .photo_outer {
+  width: 2.6rem;
+  height: 2.6rem;
+  margin: 0.2rem;
+  background: url("../images/FldmJlor1d5v18cJCyFJ3WPKe1cI.webp") no-repeat center center;
+  background-size: cover;
+  animation: move 1s linear infinite;
+}
+.information .photo .img1 {
+  position: absolute;
+  top: 0.6rem;
+  left: 0.4rem;
+}
+.information .photo .headPortrait {
+  position: absolute;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  top: 0.5rem;
+  left: 0.5rem;
+}
+.information .informationTop {
+  animation-delay: 0.3s;
+  position: absolute;
+  top: 2rem;
+  left: 3.7rem;
+  padding: 0.072rem 0.15rem;
+}
+.information .informationTop div {
+  margin-top: 0.3rem;
+}
+.information .informationCenter {
+  position: absolute;
+  top: 5rem;
+  left: 3.7rem;
+  padding: 0.072rem 0.15rem;
+}
+.information .informationCenter div {
+  margin-top: 0.4rem;
+  animation-delay: 0.4s;
+}
+.information .informationCenter .img01 {
+  animation-delay: 0.1s;
+  position: absolute;
+  left: -1.8rem;
+  top: -0.5rem;
+  width: 0.03rem;
+  height: 7rem;
+}
+.information .informationCenter .img11 {
+  animation-delay: 0.1s;
+  position: absolute;
+  left: -2rem;
+  top: 0.4rem;
+}
+.information .informationCenter .img12 {
+  animation-delay: 0.2s;
+  position: absolute;
+  left: -2rem;
+  top: 3rem;
+}
+.information .informationCenter .img13 {
+  animation-delay: 0.3s;
+  position: absolute;
+  left: -2rem;
+  top: 6.35rem;
+}
+.information .informationCenter .img21 {
+  animation-delay: 0.1s;
+  position: absolute;
+  left: -1.5rem;
+  top: 0.6rem;
+}
+.information .informationCenter .img22 {
+  animation-delay: 0.2s;
+  position: absolute;
+  left: -1.5rem;
+  top: 3.2rem;
+}
+.information .informationCenter .img23 {
+  animation-delay: 0.3s;
+  position: absolute;
+  left: -1.5rem;
+  top: 6.56rem;
+}
+.information .informationCenter .img31 {
+  animation-delay: 0.1s;
+  position: absolute;
+  left: -0.9rem;
+  top: 0.3rem;
+}
+.information .informationCenter .img32 {
+  animation-delay: 0.2s;
+  position: absolute;
+  left: -0.9rem;
+  top: 2.9rem;
+}
+.information .informationCenter .img33 {
+  animation-delay: 0.3s;
+  position: absolute;
+  left: -0.9rem;
+  top: 6.2rem;
+}
+.information .informationBottom {
+  animation-delay: 0.4s;
+  position: absolute;
+  top: 8rem;
+  left: 3.7rem;
+  padding: 0.072rem 0.15rem;
+}
+.information .informationBottom div {
+  margin-top: 0.3rem;
+}
+.work {
+  background: url("../images/bg1.webp") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.work .workContent .work_left {
+  position: absolute;
+  left: 1rem;
+  top: 2.5rem;
+}
+.work .workContent .work_left div {
+  position: absolute;
+  color: #b42c2f;
+}
+.work .workContent .work_left div:nth-child(1) {
+  top: 0.05rem;
+  animation-delay: 0.2s;
+}
+.work .workContent .work_left div:nth-child(2) {
+  top: 1.4rem;
+  animation-delay: 0.4s;
+}
+.work .workContent .work_left div:nth-child(3) {
+  top: 2.23rem;
+  animation-delay: 0.6s;
+}
+.work .workContent .work_left div:nth-child(4) {
+  top: 3.5rem;
+  animation-delay: 0.8s;
+}
+.work .workContent .work_left div:nth-child(5) {
+  top: 5.5rem;
+  animation-delay: 1s;
+}
+.work .workContent .work_left div:nth-child(6) {
+  top: 6.8rem;
+  animation-delay: 1.2s;
+}
+.work .workContent .work_vertical {
+  position: absolute;
+  left: 2rem;
+  top: 2.5rem;
+  height: 8rem;
+  width: 0.05rem;
+}
+.work .workContent .work_right {
+  position: absolute;
+  left: 3rem;
+  top: 2.5rem;
+}
+.work .workContent .work_right div {
+  position: absolute;
+  width: 4.32rem;
+}
+.work .workContent .work_right div h4 {
+  color: #b42c2f;
+  font-size: 0.35rem;
+}
+.work .workContent .work_right div:nth-child(1) {
+  top: 0rem;
+  animation-delay: 0.2s;
+}
+.work .workContent .work_right div:nth-child(2) {
+  top: 1.35rem;
+  animation-delay: 0.4s;
+}
+.work .workContent .work_right div:nth-child(3) {
+  top: 2.15rem;
+  animation-delay: 0.6s;
+}
+.work .workContent .work_right div:nth-child(4) {
+  top: 3.45rem;
+  animation-delay: 0.8s;
+}
+.work .workContent .work_right div:nth-child(5) {
+  top: 5.45rem;
+  animation-delay: 1s;
+}
+.work .workContent .work_right div:nth-child(6) {
+  top: 6.75rem;
+  animation-delay: 1.2s;
+}
+.workExperience {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.workExperience .workContent {
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
+  text-align: center;
+  font-size: 0.5rem;
+}
+.workExperience .workContent a {
+  color: #fff;
+  text-decoration: none;
+}
+.workExperience .workContent .workTwo > img {
+  width: 4rem;
+  height: 4rem;
+}
+.workExperience .workContent .workthree > img {
+  width: 4rem;
+  height: 4rem;
+}
+.contactMe {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.contactMe .workContent {
+  position: absolute;
+  top: 3rem;
+  text-align: center;
+  font-size: 0.5rem;
+}
+.contactMe .workContent a {
+  color: #fff;
+  text-decoration: none;
+}
+.contactMe .workContent .workOne > img {
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 1.5rem;
+}
+.coverOne {
+  background: #000;
+}
