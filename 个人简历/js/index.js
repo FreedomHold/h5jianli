@@ -8,7 +8,6 @@ function show(a, i, name) {
         if (clerity <= 1) {
             clerity += 0.01;
         } else if (clerity >= 1) {
-            console.log(i, clerity);
             $(".coverOne").css("display", "none");
             oli.css('opacity', 0)
             $(name).css("display", "block");
@@ -101,7 +100,6 @@ $("#contactMe").on('touchmove', function (e) {
 
 
 $loginBox.on('touchend', function (e) {
-    console.log("end");
     //下一页
     if (moveY < 0) {
         $loginBox.hide();
