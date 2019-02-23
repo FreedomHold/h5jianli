@@ -1,3 +1,18 @@
+let audio=$("audio")[0];
+audio.play();
+let flag=1;
+$(".music").on("tap",muisc);
+function muisc(){
+    if(flag==1){
+        audio.pause();
+        $(".music").css("animation","none");
+        flag=0;
+    }else{
+        audio.play();
+        $(".music").css("animation","move 1s linear infinite");
+        flag=1;
+    }
+}
 let oUl = $(".clear")[0];
 let oli = $(".coverOne>.clear>li");
 function show(a, i, name) {
@@ -32,16 +47,29 @@ function play_show(name) {
         }
     }, 50);
 }
+// function ()
 $loginBox = $("#app");
 $information = $("#information");
 $work = $("#work");
 $workExperience = $("#workExperience");
 $contactMe = $("#contactMe");
+
 play_show(".loginBox");
 
+
+
+
+// var page1 = document.getElementById('page1'),        //滑动item
+// page2 = document.getElementById('page2'),
+// page3 = document.getElementById('page3'),
+// wraper = document.getElementById('wraper'),
+//     content = document.getElementById('content');    //滑动容器
+// var itemHeight = wraper.offsetHeight;                //滑动item高度         
+// var index = 0;                                       //滑动计数
 var moveY,                                           //滑动距离
     endY,                                            //滑动停止的Y坐标
     startY;                                          //滑动开始的Y坐标
+// content.style.height = (itemHeight * 3) + 'px'
 // 触摸开始
 function boxTouchStart(e) {
     e = e || window.event;
@@ -73,9 +101,7 @@ $contactMe.on('touchstart', function (e) {
 
 $loginBox.on('touchmove', function (e) {
     var touch = e.touches[0];
-
     moveY = touch.pageY - startY;
-
 })
 $("#information").on('touchmove', function (e) {
     var touch = e.touches[0];
@@ -85,7 +111,6 @@ $("#work").on('touchmove', function (e) {
 
     var touch = e.touches[0];
     moveY = touch.pageY - startY;
-
 })
 $("#workExperience").on('touchmove', function (e) {
 
@@ -100,6 +125,7 @@ $("#contactMe").on('touchmove', function (e) {
 
 
 $loginBox.on('touchend', function (e) {
+    console.log("end");
     //下一页
     if (moveY < 0) {
         $loginBox.hide();
@@ -120,6 +146,7 @@ $("#information").on('touchend', function (e) {
     }
 })
 $("#work").on('touchend', function (e) {
+
     //下一页
     if (moveY < 0) {
 
@@ -134,7 +161,6 @@ $("#work").on('touchend', function (e) {
     }
 })
 $("#workExperience").on('touchend', function (e) {
-
     // 下一頁
     if (moveY < 0) {
         $workExperience.hide();

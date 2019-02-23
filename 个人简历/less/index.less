@@ -3,7 +3,6 @@
     padding: 0;
     list-style: none;
 }
-
 @img: "../images/";
 .w() {
     width: 100%;
@@ -40,6 +39,10 @@ body {
     zoom: 1;
 }
 
+.rotate {
+    animation: move 1s linear infinite;
+}
+
 .music {
     z-index: 20;
     width: 0.5rem;
@@ -47,14 +50,22 @@ body {
     position: absolute;
     top: 0.5rem;
     right: 0.5rem;
-    transform-origin: center center; // animation: move 1s linear infinite;
-    // transform: rotate(180deg);
+    // transform-origin: center center; // animation: move 1s linear infinite;
+    transform: rotate(180deg);
     i {
         position: absolute;
         top: 0;
         left: 0;
         font-size: 0.5rem;
         color: white;
+    }
+}
+@keyframes rot{
+    0%{
+        transform: rotate(0deg);
+    }
+    360%{
+        transform: rotate(360deg);
     }
 }
 
@@ -156,23 +167,9 @@ body {
             animation-delay: 0.1s; //动画延迟时间
             font-size: 0.25rem;
         }
-        .rotate {
-            animation: move 1s linear infinite;
-        }
+
     }
     .Picture {
-        // .topPicture{
-        //     position: relative;
-        //     top:-1.5rem;
-        //     right: -2.5rem;
-        //     z-index: 0;
-        // }
-        // .bottomPicture{
-        //     position: relative;
-        //     top:8.5rem;
-        //     right: 1.5rem;
-        //     z-index: 0;
-        // }
         .textTopPicture {
             position: relative;
             top: 2.5rem;
@@ -464,7 +461,6 @@ body {
 }
 
 .contactMe {
-    // background: url("@{img}/bg2.gif");
     .w();
     position: relative;
     overflow: hidden;

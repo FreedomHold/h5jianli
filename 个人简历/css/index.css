@@ -29,6 +29,9 @@ body {
 .clear {
   zoom: 1;
 }
+.rotate {
+  animation: move 1s linear infinite;
+}
 .music {
   z-index: 20;
   width: 0.5rem;
@@ -36,7 +39,7 @@ body {
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
-  transform-origin: center center;
+  transform: rotate(180deg);
 }
 .music i {
   position: absolute;
@@ -44,6 +47,14 @@ body {
   left: 0;
   font-size: 0.5rem;
   color: white;
+}
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  360% {
+    transform: rotate(360deg);
+  }
 }
 .coverOne {
   z-index: 100;
@@ -143,9 +154,6 @@ body {
   left: 3.5rem;
   animation-delay: 0.1s;
   font-size: 0.25rem;
-}
-.loginBox .name_text .rotate {
-  animation: move 1s linear infinite;
 }
 .loginBox .Picture .textTopPicture {
   position: relative;
